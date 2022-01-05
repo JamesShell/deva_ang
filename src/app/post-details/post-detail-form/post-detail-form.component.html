@@ -1,0 +1,25 @@
+<div class="postDetailFormContent content container">
+    <form #f="ngForm" novalidate class="row g-3" id="edit" (submit)="onSubmit(f)">
+        <h3 class="col-md-6 offset-md-3">Create New Post</h3>
+        <input type="hidden" name="postId" [value]="service.formData.postId">
+        <div class="col-md-6 offset-md-3">
+            <label>POST OWNER NAME</label>
+            <input type="text" class="form-control" placeholder="Username" name="ownerUsername" ngModel
+            #ownerUsername = "ngModel" required [(ngModel)]="service.formData.ownerUsername" maxlength="100">
+        </div>
+        <div class="col-md-6 offset-md-3">
+            <label>TITLE</label>
+            <input type="text" class="form-control" placeholder="Post Title" name="title" ngModel
+            #title = "ngModel" required [(ngModel)]="service.formData.title" maxlength="100">
+        </div>
+        <div class="col-md-6 offset-md-3">
+            <label>DESCRIPTION</label>
+            <textarea type="text" class="form-control" placeholder="About Post" name="description" ngModel
+            #description = "ngModel" required [(ngModel)]="service.formData.description" rows="7" minlength="20" maxlength="600"></textarea>
+        </div>
+        <input type="hidden" name="uploadingDate" [value]="service.formData.uploadingDate">
+        <div class="col-md-6 offset-md-3">
+            <button class="btn btn-primary btn-md btn-block" type="submit" [disabled]="f.invalid">SUBMIT</button>
+        </div>
+    </form>
+</div>

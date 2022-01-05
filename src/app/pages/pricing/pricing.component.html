@@ -1,0 +1,102 @@
+<div class=".pricing-container container-fluid text-center py-3">
+    <div class="col-md-6 p-lg-5 mx-auto my-5">
+        <h1 class="pricing-title">Buy once, use it forever.</h1>
+        <p class="pricing-description">Get lifetime access to 500+ components today, plus any updates we release in the future for a simple one-time price.</p>
+        <dl class="pricing-included-packages">
+            <dt class="pricing-included-packages-title">ALL PACKAGE INCLUDE</dt>
+            <div class="pricing-packages btn-group">
+                <dd class="pricing-included-packages-description pip-start"><i class="fab fa-html5"></i> HTML</dd>
+                <dd class="pricing-included-packages-description pip-center"><i class="fab fa-react"></i> REACT</dd>
+                <dd class="pricing-included-packages-description pip-end"><i class="fab fa-vuejs"></i> VUE</dd>
+            </div>
+        </dl>
+    </div>
+    <div class="pricing-plan-container">
+        <section class="pricing-plan pricing-plan-highlighted">
+            <div class="pricing-plan-special-text">BUNDLE</div>
+            <div class="pricing-plan-header">
+                <h1 class="pricing-plan-title">COMPLETE PACKAGE</h1>
+                <h2 class="pricing-plan-summary"></h2>
+            </div>
+            <div class="pricing-plan-description">
+                <ul class="pricing-plan-list">
+                    <li class="pricing-plan-feature">All application UI components</li>
+                    <li class="pricing-plan-feature">All marketing components</li>
+                    <li class="pricing-plan-feature">All ecommerce components</li>
+                    <li class="pricing-plan-feature">Lifetime access</li>
+                    <li class="pricing-plan-feature">Use on unlimited projects</li>
+                    <li class="pricing-plan-feature">Free updates</li>
+                    <li class="pricing-plan-feature">Community access</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-actions">
+                <p class="pricing-plan-cost">$279</p>
+                <p class="pricing-plan-text">USD</p>
+                <a [routerLink]="['/register', payments[0].id]" routerLinkActive="active" class="pricing-plan-button">Get this package</a>
+            </div>
+        </section>
+
+        <section class="pricing-plan">
+            <div class="pricing-plan-header">
+                <h1 class="pricing-plan-title">APPLICATION UI</h1>
+                <h2 class="pricing-plan-summary"></h2>
+            </div>
+            <div class="pricing-plan-description">
+                <ul class="pricing-plan-list">
+                    <li class="pricing-plan-feature">All application UI components</li>
+                    <li class="pricing-plan-feature">Lifetime access</li>
+                    <li class="pricing-plan-feature">Use on unlimited projects</li>
+                    <li class="pricing-plan-feature">Free updates</li>
+                    <li class="pricing-plan-feature">Community access</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-actions">
+                <p class="pricing-plan-cost">$149</p>
+                <p class="pricing-plan-text">USD</p>
+                <a [routerLink]="['/register', payments[1].id]" routerLinkActive="active" class="pricing-plan-button">Get this package</a>
+            </div>
+        </section>
+
+        <section class="pricing-plan">
+            <div class="pricing-plan-header">
+                <h1 class="pricing-plan-title">MARKETING</h1>
+                <h2 class="pricing-plan-summary"></h2>
+            </div>
+            <div class="pricing-plan-description">
+                <ul class="pricing-plan-list">
+                    <li class="pricing-plan-feature">All marketing components</li>
+                    <li class="pricing-plan-feature">Lifetime access</li>
+                    <li class="pricing-plan-feature">Use on unlimited projects</li>
+                    <li class="pricing-plan-feature">Free updates</li>
+                    <li class="pricing-plan-feature">Community access</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-actions">
+                <p class="pricing-plan-cost">$149</p>
+                <p class="pricing-plan-text">USD</p>
+                <a [routerLink]="['/register', payments[2].id]" routerLinkActive="active" class="pricing-plan-button">Get this package</a>
+            </div>
+        </section>
+
+        <section class="pricing-plan">
+            <div class="pricing-plan-header">
+                <h1 class="pricing-plan-title">ECOMMERCE</h1>
+                <h2 class="pricing-plan-summary"></h2>
+            </div>
+            <div class="pricing-plan-description">
+                <ul class="pricing-plan-list">
+                    <li class="pricing-plan-feature">All ecommerce components</li>
+                    <li class="pricing-plan-feature">Lifetime access</li>
+                    <li class="pricing-plan-feature">Use on unlimited projects</li>
+                    <li class="pricing-plan-feature">Free updates</li>
+                    <li class="pricing-plan-feature">Community access</li>
+                </ul>
+            </div>
+            <div class="pricing-plan-actions">
+                <p class="pricing-plan-cost">$149</p>
+                <p class="pricing-plan-text">USD</p>
+                <a [routerLink]="['/register', payments[3].id]" routerLinkActive="active" class="pricing-plan-button">Get this package</a>
+            </div>
+        </section>
+    </div>
+</div>

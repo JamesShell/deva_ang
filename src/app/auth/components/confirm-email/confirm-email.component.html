@@ -1,0 +1,14 @@
+<div class="confirm-emailPageContent content container">
+<div class="row">
+    <h3 class="col-md-4 offset-md-4">Email Confirmation Page</h3>
+    <div class="alert alert-success col-md-4 offset-md-4" role="alert" *ngIf="emailConfirmed">
+      <h4 class="alert-heading">Well done!</h4>
+      <p>Email Confirmed, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+      <hr>
+      <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+    </div>
+    <div class="alert alert-danger col-md-4 offset-md-4" role="alert" *ngIf="!emailConfirmed">
+      Unable to confirm email
+    </div>
+  </div>
+</div>

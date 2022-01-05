@@ -1,0 +1,22 @@
+<app-post-detail-form></app-post-detail-form>
+
+<div class="postDetailsContent content container"><div class="post-driver">
+    <hr>
+</div>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" *ngFor="let pd of service.list; let i = index">
+            <div class="card h-100" >
+                <div class="card-body" (click)="populateForm(pd)">
+                    <h5 class="card-title">{{pd.title}}</h5>
+                    <h6 class="card-title">{{pd.ownerUsername}}</h6>
+                    <p class="card-text">{{pd.description}}</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <a [routerLink]="['/posts', pd.postId]" class="card-link float-start">Read More</a>
+                    <i (click)="onDelete(pd.postId)" class="far fa-trash-alt fa-lg text-danger float-end" ></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+</div>
